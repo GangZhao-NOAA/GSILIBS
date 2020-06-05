@@ -27,7 +27,11 @@ elif [[ -d /work/noaa ]] ; then  ### orion
     #modulefile="/work/noaa/comgsi/modulefiles/modulefile.intel20"
 else
     echo "unknown machine"
+    echo "You will need to make modifications at this location"
+    echo "refer the above settings, load appropriate modules here and delete 'exit 9'"
     exit 9
+    source /etc/profile.d/modules.sh
+    modulefile="/my/modulefile.GSI"
 fi
 
 if [ ! -f $modulefile ]; then
