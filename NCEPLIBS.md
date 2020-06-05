@@ -1,17 +1,18 @@
 # Build libraries for GSI from the NCEPLIBS repository
 
-** NOTE ** It is recommend to follow the instructions provided by UFS to build NCEPLIBS
+**It is recommend to follow instructions provided by UFS to build NCEPLIBS**
 
-The following is to share our experience on building only part of NCEPLIBS to satisfy the GSI requirement.
-Using this method, these  is no need to compile NCEPLIBS-external
+The following is to share our experiences on building only parts of NCEPLIBS to meet the GSI requirement.
+*Using this method, these is no need to compile NCEPLIBS-external*
 
-1.
+### 1. Clone NCEPLIBS from Github
 ```
 git clone -b ufs-v1.0.0 --recursive https://github.com/NOAA-EMC/NCEPLIBS
 cd NCEPLIBS
 ```
-2. Modify CMakeLists.txt
-  Make sure the following 6 lines are commented out 
+
+### 2. Modify CMakeLists.txt
+  Make sure the following 6 lines are commented out in the CMakeLists.txt
 ```
 #add_subdirectory(NCEPLIBS-bufr)
 ...
@@ -22,20 +23,23 @@ cd NCEPLIBS
 #add_subdirectory(UFS_UTILS)
 #add_subdirectory(NCEPLIBS-post)
 ```
-3.
+
+### 3. Build NCEPLIBS and install libraries
 ```
  mkdir build;  cd build
  cmake ..
  make -j8
+ 
+ make install
 ```
-4. 
-`make install`
+### 4. make links
+This is to remove version nubmers in the filename.
 
-5. 
+Assuming GSILIBS/ and NCEPLIBS/ are under the same parent directory.
 ```
 cd build/install/lib
-../../../../../GSILIBS/linklibs
+../../../../GSILIBS/linklibs
 ```
 
 All done!
-```
+
