@@ -10,6 +10,8 @@ For users on the following machines `Hera, Jet, Orion, Cheyenne`, the build proc
 ## 2.1 build required libraries
 With the transition of NOAA GSI/EnKF codes to Github, the origial (outdated) libsrc/ was removed and those libraries will come from the [NCEPLIBS](https://github.com/NOAA-EMC/NCEPLIBS) repository released by [UFS](https://github.com/ufs-community/ufs-weather-model/wiki).  For how to build NCEPLIBS, please seek helps from the [UFS support forum](https://forums.ufscommunity.org).
 
+FYI, [Here is a quick summary](NCEPLIBS.md) how we installed NCEPLIBS.
+
 ## 2.2. build bufrlib and wrfio lib
 This is a temporary solution as NCEPLIBS does not release bufrlib and wrfio lib at the moment. 
 You can build these two libraries from the [comgsi/GSILIBS](https://github.com/comgsi/GSILIBS) repo at Github. 
