@@ -11,7 +11,7 @@ For users on the following machines `Hera, Jet, Orion, Cheyenne`, the build proc
 This is a temporary solution as NCEPLIBS does not release bufrlib and wrfio lib at the moment. 
 You can build these two libraries from the [comgsi/GSILIBS](https://github.com/comgsi/GSILIBS) repo at Github. 
 ```
-git clone git@github.com:comgsi/GSILIBS
+git clone https://github.com/comgsi/GSILIBS
 cd GSILIBS
 mkdir build; cd build
 cmake -DBUILD_CORELIBS=ON ..
