@@ -11,11 +11,13 @@ For users on the following machines `Hera, Jet, Orion, Cheyenne`, the build proc
 This is a temporary solution as NCEPLIBS does not release bufrlib and wrfio lib at the moment. 
 You can build these two libraries from the [comgsi/GSILIBS](https://github.com/comgsi/GSILIBS) repo at Github. 
 ```
+git clone git@github.com:comgsi/GSILIBS
+cd GSILIBS
 mkdir build; cd build
 cmake -DBUILD_CORELIBS=ON ..
 make -j8
 ```
-The libraries will be under build/lib
+The compiled libraries will be under build/lib
 
 ## 2.2 build NCEPLIBS
 With the transition of NOAA GSI/EnKF codes to Github, the origial (outdated) libsrc/ was removed and those libraries will come from the [NCEPLIBS](https://github.com/NOAA-EMC/NCEPLIBS) repository released by [UFS](https://github.com/ufs-community/ufs-weather-model/wiki).  For how to build NCEPLIBS, please seek helps from the [UFS support forum](https://forums.ufscommunity.org).
