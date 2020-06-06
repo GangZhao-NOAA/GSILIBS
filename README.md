@@ -3,7 +3,7 @@
 # 1. Hera, Jet, Orion, Cheyenne users:
 For users on the following machines `Hera, Jet, Orion, Cheyenne`, the build process is very straight forward:
 
-  run `ush/build.comgsi` under the main GSI directory and you will get executables, such as gsi.x, enkf-wrf.x, etc
+clone [comgsi/GSI](https://github.com/comgsi/GSI), run `ush/build.comgsi` under the main GSI directory and you will get executables, such as gsi.x, enkf-wrf.x, etc
 
 # 2. Community users:
 
@@ -24,7 +24,12 @@ With the transition of NOAA GSI/EnKF codes to Github, the origial (outdated) lib
 
 FYI, [Here is a quick summary](NCEPLIBS.md) how we installed NCEPLIBS.
 
-## 2.3. use ush/build.comgsi to do compling
+## 2.3. build GSI/EnKF
+
+#### (1) Clone the comgsi/GSI repo:
+```
+git clone https://github.com/comgsi/GSI.git
+```
 
 #### (1) create a file to list all required modules for the build process:
 for example, a file `modulefile.me.GSI_UPP_WRF` may looks like as follows:
@@ -36,7 +41,7 @@ module load mkl
 module load netcdf
 module load cmake/3.16.4
 ```
-#### (2) change the following three variables accordingly in the ush/build.comgsi
+#### (2) change the following three variables accordingly in the file ush/build.comgsi
     modulefile="/my/modulefile.me.GSI_UPP_WRF"
     NCEPLIBS="/my/NCEPLIBS/b_intel18.0.5_impi2018.4.274/install"
     GSILIBS="/my/GSILIBS/b_intel18.0.5_impi2018.4.274/"
