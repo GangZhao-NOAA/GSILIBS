@@ -3,7 +3,7 @@
 **It is recommend to follow instructions provided by UFS to build NCEPLIBS**
 
 The following is to share our experiences on building only parts of NCEPLIBS to meet the GSI requirement.
-*Using this method, these is no need to compile NCEPLIBS-external*
+*this method may avoid to compile NCEPLIBS-external if your system already have the following libraries installed: MPI zlib HDF5 NetCDF4 libpng Jasper*
 
 ### 1. Clone NCEPLIBS from Github
 ```
