@@ -12,7 +12,7 @@ cd NCEPLIBS
 ```
 
 ### 2. Modify CMakeLists.txt
-  Make sure the following 6 lines are commented out in the CMakeLists.txt
+  Make sure the following 8 lines are commented out in the CMakeLists.txt
 ```
 #add_subdirectory(NCEPLIBS-g2)
 ...
