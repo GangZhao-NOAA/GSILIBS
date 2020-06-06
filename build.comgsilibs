@@ -23,7 +23,7 @@ elif [[ -d /glade ]] ; then  ### cheyenne
     #modulefile="/glade/p/ral/jntp/gge/modulefiles/modulefile.cheyenne.GSI_UPP_WRF"
     modulefile="/glade/p/ral/jntp/gge/precompiled/NCEPLIBS/modulefile.cheyenne.GSI_UPP_WRF.gnu"
 elif [[ -d /work/noaa ]] ; then  ### orion
-    modulefile="/work/noaa/comgsi/modulefiles/modulefile.orion.GSI_UPP_WRF"
+    modulefile="/home/gge/modulefiles/modulefile.orion.GSI_UPP_WRF"
     #modulefile="/work/noaa/comgsi/modulefiles/modulefile.intel20"
 else
     echo "unknown machine"
