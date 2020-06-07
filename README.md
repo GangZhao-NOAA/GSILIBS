@@ -28,7 +28,7 @@ FYI, [Here is a quick summary](NCEPLIBS.md) how we installed NCEPLIBS.
 
 #### (1) Clone the comgsi/GSI repo:
 ```
-git clone https://github.com/comgsi/GSI.git
+git clone https://github.com/comgsi/GSI
 ```
 
 #### (1) create a file to list all required modules for the build process:
@@ -50,4 +50,9 @@ module load cmake/3.16.4
 
 **NOTE** For those who don't have module systems in HPCs, users can follow the ush/build.comgsi to set up enviormental variables and then do the compling.
 
-
+## 2.4. fix files
+You can get some basic fix files from the comgsi/fix repository:
+```
+git clone https://github.com/comgsi/fix
+```
+For a complete set of fix files, please downlod them from the [DTC website](https://dtcenter.org/community-code/gridpoint-statistical-interpolation-gsi/download). 
